@@ -1,0 +1,37 @@
+.cont {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-cont {
+  margin-top: 1.25rem;
+  display: flex;
+}
+
+.img1 {
+  margin-right: 15rem;
+  margin-bottom: 8rem;
+}
+
+img {
+  width: 300px;
+}
+
+.pict {
+  opacity: 0;
+  width: 10px;
+}
+
+.rata {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}

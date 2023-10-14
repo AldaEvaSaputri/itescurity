@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>secretmessage</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="steganography.min.js"></script>
+  </head>
+
+  <body>
+    <div class="cont">
+      <div class="judul">
+        <h1>The Secret Message</h1>
+      </div>
+      <div class="rata">
+        <!--Upload Gambar-->
+        <input
+          class="ui primary button"
+          type="file"
+          name="pic"
+          accept="image/*"
+          onchange="readURL(this);"
+        />
+        <!--Input Pesan-->
+        <div class="ui input">
+          <input id="text" type="text" />
+        </div>
+
+        <button class="ui secondary button" onclick="hideText()">
+          Hide Message Into Image
+        </button>
+      </div>
+      <!--Gambar-1 yang di upload-->
+      <div class="img-cont">
+        <div class="img1">
+          <h5 class="sm">Source Image</h5>
+
+          <img id="image1" src="" alt="" />
+        </div>
+
+        <!--Gambar yang udah ada pesan-->
+        <div class="">
+          <h5 class="sm">Message Encoded Image</h5>
+          <img id="image2" src="" alt="" />
+        </div>
+      </div>
+
+      <div class="">
+        <!--Upload gambar pesan-->
+        <input
+          class="ui secondary button"
+          type="file"
+          name="pic"
+          accept="image/*"
+          onchange="decode(this);"
+        />
+        <!--Tampilan Pesan-->
+        <img
+          class="pict"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          alt=""
+        />
+        <h5 class="sm">Your Message:</h5>
+        <h2 id="decoded"></h2>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
